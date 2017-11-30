@@ -7,9 +7,9 @@ function theUserInput(){
 function testIfPalindrome(userInput){
 	let word = userInput; 
 	let array = word.split("");
-	let backString = array.join("");
+	let backString = array.join("").toLowerCase();
 	let change = array.reverse("");
-	let oneMore = change.join("");
+	let oneMore = change.join("").toLowerCase();
 	let answer = [ ]
     if (backString === oneMore){
     		answer = true;
